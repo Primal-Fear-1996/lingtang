@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html data-cf-welcome-bar-visibility="visible"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <script src="https://xiaoyang.tw/cdn-cgi/apps/head/-XVh87F25xNfNmIo3KYdinzFZSU.js"></script>
+    <script src="https://xiaoyang.tw/cdn-cgi/apps/body/feuVUUokdAUClzgLFnms1FM_IyI.js"></script>
+    <link rel="shortcut icon" href="https://xiaoyang.tw/sb.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>OhCNZZ劲爆灵堂</title>
+    <link rel="stylesheet" href="./files/APlayer.min.css">
+    <style>
+        body {
+            padding-left: 5px;
+            padding-right: 5px;
+            padding-bottom: 12px;
+            padding-top: 12px;
+            background: url(bg.png);
+        }
+
+        center {
+            background: #fff;
+            max-width: 600px;
+            padding: 10px;
+            margin: 20px auto;
+        }
+
+        b {
+            margin: 0 1.5px;
+        }
+
+        @-webkit-keyframes rotate {
+            from {
+                -webkit-transform: rotate(0deg)
+            }
+
+            to {
+                -webkit-transform: rotate(360deg)
+            }
+        }
+
+        @-webkit-keyframes rotate-1 {
+            from {
+                -webkit-transform: rotate(360deg)
+            }
+
+            to {
+                -webkit-transform: rotate(0deg)
+            }
+        }
+
+        @keyframes rotate {
+            from {
+                -webkit-transform: rotate(0deg)
+            }
+
+            to {
+                -webkit-transform: rotate(360deg)
+            }
+        }
+
+        @keyframes rotate-1 {
+            from {
+                -webkit-transform: rotate(360deg)
+            }
+
+            to {
+                -webkit-transform: rotate(0deg)
+            }
+        }
+
+        @-webkit-keyframes shake-it {
+            0% {
+                text-shadow: 0 0 rgba(0, 255, 255, .5), 0 0 rgba(255, 0, 0, .5);
+            }
+
+            25% {
+                text-shadow: -2px 0 rgba(0, 255, 255, .5), 2px 0 rgba(255, 0, 0, .5);
+            }
+
+            50% {
+                text-shadow: -5px 0 rgba(0, 255, 255, .5), 3px 0 rgba(255, 0, 0, .5);
+            }
+
+            100% {
+                text-shadow: 3px 0 rgba(0, 255, 255, .5), 5px 0 rgba(255, 0, 0, .5);
+            }
+        }
+
+        @keyframes shake-it {
+            0% {
+                text-shadow: 0 0 rgba(0, 255, 255, .5), 0 0 rgba(255, 0, 0, .5);
+            }
+
+            25% {
+                text-shadow: -2px 0 rgba(0, 255, 255, .5), 2px 0 rgba(255, 0, 0, .5);
+            }
+
+            50% {
+                text-shadow: -5px 0 rgba(0, 255, 255, .5), 3px 0 rgba(255, 0, 0, .5);
+            }
+
+            100% {
+                text-shadow: 3px 0 rgba(0, 255, 255, .5), 5px 0 rgba(255, 0, 0, .5);
+            }
+        }
+
+        @-webkit-keyframes shake-sb {
+            0% {
+                text-shadow: 0 0 rgba(0, 60, 255, 0.959), 0 0 rgba(255, 0, 0, 0.281);
+            }
+
+            25% {
+                text-shadow: 1px 0 rgba(255, 136, 0, 0.973), -1px 0 rgb(0, 255, 64);
+            }
+
+            50% {
+                text-shadow: 2.5px 0 rgba(255, 0, 157, 0.904), -1.5px 0 rgb(0, 255, 242);
+            }
+
+            100% {
+                text-shadow: -1.5px 0 rgba(255, 230, 0, 0.966), -2.5px 0 rgb(229, 255, 0);
+            }
+        }
+
+        @keyframes shake-sb {
+            0% {
+                text-shadow: 0 0 rgba(0, 60, 255, 0.959), 0 0 rgba(255, 0, 0, 0.281);
+            }
+
+            25% {
+                text-shadow: 1px 0 rgba(255, 136, 0, 0.973), -1px 0 rgb(0, 255, 64);
+            }
+
+            50% {
+                text-shadow: 2.5px 0 rgba(255, 0, 157, 0.904), -1.5px 0 rgb(0, 255, 242);
+            }
+
+            100% {
+                text-shadow: -1.5px 0 rgba(255, 230, 0, 0.966), -2.5px 0 rgb(229, 255, 0);
+            }
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .metatext {
+            padding: 30px;
+            max-width: 300px;
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        .box {
+            display: block;
+            padding: 20px;
+        }
+
+        #sb1 {
+            width: 190.5px;
+            height: 250px;
+            background: url(sb.jpg);
+            background-size: contain;
+            position: fixed;
+            top: 0;
+            color: #fff;
+            animation: 2.8s linear 0s normal none infinite rotate;
+            -webkit-animation: 2.8s linear 0s normal none infinite rotate;
+        }
+
+        #sb2 {
+            opacity: .8;
+            width: 175px;
+            height: 250px;
+            background: url(sb2.jpg);
+            background-size: contain;
+            position: fixed;
+            top: 0;
+            color: #fff;
+            animation: 3.7s linear .1s normal none infinite rotate-1;
+            -webkit-animation: 3.7s linear .1s normal none infinite rotate-1;
+        }
+
+        #sb3 {
+            width: 110px;
+            height: 120px;
+            background: url(sb0.jpg);
+            background-size: contain;
+            position: fixed;
+            top: 0;
+            color: #fff;
+            animation: 2.2s linear 0s normal none infinite rotate-1;
+            -webkit-animation: 2.2s linear 0s normal none infinite rotate-1;
+        }
+
+        @media only screen and (max-width: 768px) {
+            #sb1 {
+                width: 95.25px;
+                height: 125px;
+            }
+
+            #sb2 {
+                width: 87.5px;
+                height: 125px;
+            }
+
+            .metatext {
+                padding: 5px;
+                width: inherit;
+            }
+        }
+    </style>
+<style>
+        html {
+          position: relative;
+          top: 56px;
+        }
+      </style><style>
+      cloudflare-app[app="welcome-bar"] {
+        background-color: #0099ff;
+        color: #ffffff;
+      }
+
+      @media (max-width: 768px) {
+        cloudflare-app[app="welcome-bar"][data-style="prominent"] .alert-cta-button,
+        cloudflare-app[app="welcome-bar"][data-style="prominent"] .alert-cta-button:hover,
+        cloudflare-app[app="welcome-bar"][data-style="prominent"] .alert-cta-button:active {
+          color: #ffffff;
+        }
+      }
+
+      @media (min-width: 768px) {
+        cloudflare-app[app="welcome-bar"][data-style="prominent"] .alert-cta-button,
+        cloudflare-app[app="welcome-bar"][data-style="prominent"] .alert-cta-button:hover,
+        cloudflare-app[app="welcome-bar"][data-style="prominent"] .alert-cta-button:active {
+          background-color: #ffffff !important;
+          color: #0099ff !important;
+        }
+      }
+    </style><link rel="stylesheet" href="data:text/css;charset=utf-8;base64,LyoKICBTcGVjaWZpY2l0eSB0byBjb21iYXQgdGhpbmdzIGxpa2UgdGhpcyAoZnJvbSBDTk4uY29tIGFzIG9mIDYvNi8xNik6CgogIGJvZHkgPiA6bm90KC5uYXYpIHsKICAgIC13ZWJraXQtdHJhbnNmb3JtOiBub25lICFpbXBvcnRhbnQ7CiAgICB0cmFuc2Zvcm06IG5vbmUgIWltcG9ydGFudDsKICB9CiovCmh0bWwgPiBib2R5ID4gY2xvdWRmbGFyZS1hcHBbYXBwPSJ3ZWxjb21lLWJhciJdIHsKICBkaXNwbGF5OiBibG9jazsKICBkaXNwbGF5OiAtd2Via2l0LWJveDsKICBkaXNwbGF5OiAtbXMtZmxleGJveDsKICBkaXNwbGF5OiBmbGV4OwogIC13ZWJraXQtYm94LWFsaWduOiBjZW50ZXI7CiAgICAgIC1tcy1mbGV4LWFsaWduOiBjZW50ZXI7CiAgICAgICAgICBhbGlnbi1pdGVtczogY2VudGVyOwogIC13ZWJraXQtYm94LXBhY2s6IGp1c3RpZnk7CiAgICAgIC1tcy1mbGV4LXBhY2s6IGp1c3RpZnk7CiAgICAgICAgICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47CiAgZm9udC1zaXplOiAxNnB4OwogIG1pbi1oZWlnaHQ6IDIuNWVtOwogIGxpbmUtaGVpZ2h0OiAxOwogIG92ZXJmbG93OiBoaWRkZW47CiAgcG9zaXRpb246IGZpeGVkOwogIHRvcDogMDsKICBsZWZ0OiAwOwogIHJpZ2h0OiAwOwogIC13ZWJraXQtZm9udC1zbW9vdGhpbmc6IGFudGlhbGlhc2VkOwogIC1tb3otb3N4LWZvbnQtc21vb3RoaW5nOiBncmF5c2NhbGU7CiAgLXdlYmtpdC11c2VyLXNlbGVjdDogbm9uZTsKICAtd2Via2l0LXRyYW5zZm9ybTogdHJhbnNsYXRlM2QoMCwgLTMwMCUsIDApOwogICAgICAgICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUzZCgwLCAtMzAwJSwgMCk7Cn0KCmh0bWwgPiBib2R5ID4gY2xvdWRmbGFyZS1hcHBbYXBwPSJ3ZWxjb21lLWJhciJdOjpiZWZvcmUgewogIGNvbnRlbnQ6ICIiOwogIHBvc2l0aW9uOiBhYnNvbHV0ZTsKICB0b3A6IDA7CiAgbGVmdDogMDsKICByaWdodDogMDsKICBib3R0b206IDA7CiAgYmFja2dyb3VuZDogcmdiYSgwLCAwLCAwLCAuMDUpOwogIC13ZWJraXQtdHJhbnNmb3JtOiB0cmFuc2xhdGUzZCgtMTAwJSwgMCwgMCk7CiAgICAgICAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZTNkKC0xMDAlLCAwLCAwKTsKfQoKaHRtbCA+IGJvZHkgPiBjbG91ZGZsYXJlLWFwcFthcHA9IndlbGNvbWUtYmFyIl1bZGF0YS1zbGlkZS1hbmltYXRpb25dOjpiZWZvcmUgewogIHRyYW5zaXRpb246IC13ZWJraXQtdHJhbnNmb3JtIGVhc2Utb3V0IDhzOwogIHRyYW5zaXRpb246IHRyYW5zZm9ybSBlYXNlLW91dCA4czsKICB0cmFuc2l0aW9uOiB0cmFuc2Zvcm0gZWFzZS1vdXQgOHMsIC13ZWJraXQtdHJhbnNmb3JtIGVhc2Utb3V0IDhzOwp9CgpodG1sID4gYm9keSA+IGNsb3VkZmxhcmUtYXBwW2FwcD0id2VsY29tZS1iYXIiXVtkYXRhLXNsaWRlLWFuaW1hdGlvbj0iY29tcGxldGUiXTo6YmVmb3JlIHsKICAtd2Via2l0LXRyYW5zZm9ybTogdHJhbnNsYXRlM2QoMCwgMCwgMCk7CiAgICAgICAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZTNkKDAsIDAsIDApOwp9CgpodG1sW2RhdGEtY2Ytd2VsY29tZS1iYXItdmlzaWJpbGl0eT0idmlzaWJsZSJdID4gYm9keSA+IGNsb3VkZmxhcmUtYXBwW2FwcD0id2VsY29tZS1iYXIiXSB7CiAgLXdlYmtpdC10cmFuc2Zvcm06IHRyYW5zbGF0ZTNkKDAsIDAsIDApICFpbXBvcnRhbnQ7CiAgICAgICAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZTNkKDAsIDAsIDApICFpbXBvcnRhbnQ7Cn0KCmNsb3VkZmxhcmUtYXBwW2FwcD0id2VsY29tZS1iYXIiXSBhbGVydC1tZXNzYWdlIHsKICBkaXNwbGF5OiAtd2Via2l0LWJveDsKICBkaXNwbGF5OiAtbXMtZmxleGJveDsKICBkaXNwbGF5OiBmbGV4OwogIC13ZWJraXQtYm94LWZsZXg6IDE7CiAgICAgIC1tcy1mbGV4OiAxIDEgYXV0bzsKICAgICAgICAgIGZsZXg6IDEgMSBhdXRvOwogIC13ZWJraXQtYm94LXBhY2s6IGNlbnRlcjsKICAgICAgLW1zLWZsZXgtcGFjazogY2VudGVyOwogICAgICAgICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7Cn0KCmNsb3VkZmxhcmUtYXBwW2FwcD0id2VsY29tZS1iYXIiXSBhbGVydC1tZXNzYWdlLWNvbnRlbnQgewogIGRpc3BsYXk6IC13ZWJraXQtYm94OwogIGRpc3BsYXk6IC1tcy1mbGV4Ym94OwogIGRpc3BsYXk6IGZsZXg7CiAgLXdlYmtpdC1ib3gtYWxpZ246IGNlbnRlcjsKICAgICAgLW1zLWZsZXgtYWxpZ246IGNlbnRlcjsKICAgICAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7CiAgZm9udC1zaXplOiAxLjFlbTsKICBsaW5lLWhlaWdodDogMS4yOwogIGZvbnQtd2VpZ2h0OiA1MDA7CiAgbWF4LXdpZHRoOiA3MDBweDsKfQoKQGZvbnQtZmFjZSB7CiAgZm9udC1mYW1pbHk6ICJjZmFwcHMtd2VsY29tZS1iYXItaWNvbnMiOwogIGZvbnQtc3R5bGU6IG5vcm1hbDsKICBmb250LXdlaWdodDogbm9ybWFsOwogIHNyYzogdXJsKGRhdGE6YXBwbGljYXRpb24veC1mb250LXdvZmY7Y2hhcnNldD11dGYtODtiYXNlNjQsZDA5R1JrOVVWRThBQUFPZ0FBb0FBQUFBQlh3QUFRQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUJEUmtZZ0FBQUE5QUFBQU1BQUFBRFJLamNwVDBaR1ZFMEFBQUcwQUFBQUdnQUFBQnh6Q2MyZVQxTXZNZ0FBQWRBQUFBQklBQUFBWUlES0JTbGpiV0Z3QUFBQ0dBQUFBRGNBQUFGQ0FBMGk0V2hsWVdRQUFBSlFBQUFBTHdBQUFEWUR0dFlXYUdobFlRQUFBb0FBQUFBZ0FBQUFKQWF0QWVob2JYUjRBQUFDb0FBQUFBZ0FBQUFJQS9vQUFHMWhlSEFBQUFLb0FBQUFCZ0FBQUFZQUFsQUFibUZ0WlFBQUFyQUFBQURZQUFBQnNFbkJCMXB3YjNOMEFBQURpQUFBQUJZQUFBQWcvNTBBWjNpY1kyUmdZV0ZnWkdUa1NVMU1UeTNTelV6T3p5dG1ZR1JpWUdSdy9DSEQ5RU9XK1ljRVN3OFBZd1FQODBjZUZqa3VCcFlPRGZudWJqaURoNzI3NU1la1h4MnNNZ3hkL0RJTURBSXlETDJDTWd3Y01nd25oUmlZUWNid01rZ3dLQmRscG1lVUpHZWtsaFhsNXlGWmhHd25Bd05qT3dNVEk2T0NlZmZIWHp3ZkdUOSsvUENSK2FQWTk2Ty9idncreXZieFg1SG9MNTRQLzNqWStYNU0rdEVpK2lmOHg0eUFpQjlhZjFML0FQR3hVRmErSHhORnVrVzdlYmdBT2taR28zaWNZMkJnWUdRQWdnc0ZEb2tnK3FMUHNYa3dHZ0JFWWdibEFBQjRuR05nWnZ6TE9JR0JsWUdEMVpoMUpnTURveHlFWnI3T2tNWWt4QUFFckF3UTBNQ0FDZ0xTWEZNWUhCU3NGS3pZMHY2bE1leGcvc0lnRGhSbWhDdFFBRUpHQUVROUMyOTRuR05nWUdCbWdHQVpCa1lHRUxBQjhoakJmQllHQlNETkFvUkF2b0xWLy84UTh2NXhxRW9HUmpZR0dITjRBaUk4QndDWTRnY05BSGljWTJCa1lHQUE0aTNQNzJySDg5dDhaZURtWUFDQml6N0g1aUhvL3k4Wi96Ri9BWEk1R0poQW9nQnFkdzFDQUhpY1kyQmtZR0QrOHY4bHd3N0d2d3dNLy84ei9tTUFpcUFBSmdEQWh3ZVhBZjBBQUFIOUFBQUFBRkFBQUFJQUFIaWNqWSs5RGNJd0VJVmZJRUhpUjVTSTBnVVNsU003QWdvR29LU2tSOGlLMHNTU3d3eU13QmlNd1FDTXdRRFVQSnNyS0Npd2RQWjNkKzkrREdDQ0t6TEVrMkdNdVhBUEJZeHdIMHRjaEhOcTdzSUYrU2s4d0RpYlVwbmxRMFptcVNweUR5TXNoUHZZWXlPY1UzTVRMc2dQNFFINUJZY2phdDRCR2cxTzhHalJBZTVZdTZDYmsyL3BmTVVsc2t2K09iMGgxU3RVS1BrUGhTM3RkOWRQemxLbHNhSlZKSXMxMi9uMnZQT2hkcW9xamRxcXIrbjByTkVyWFJsTDRUL2JIbEsrWXo1bTQ3eTRGdzR1ZEkxdmxTM05YMzNlRWhCRE1uaWNZMkJtQUlQL3N4alNnQlFqQXhvQUFDNnFBZ1FBQUE9PSkgZm9ybWF0KCJ3b2ZmIik7Cn0KCmNsb3VkZmxhcmUtYXBwW2FwcD0id2VsY29tZS1iYXIiXSAuYWxlcnQtY3RhLWJ1dHRvbiB7CiAgZGlzcGxheTogLXdlYmtpdC1ib3ggIWltcG9ydGFudDsKICBkaXNwbGF5OiAtbXMtZmxleGJveCAhaW1wb3J0YW50OwogIGRpc3BsYXk6IGZsZXggIWltcG9ydGFudDsKICAtd2Via2l0LWJveC1hbGlnbjogY2VudGVyICFpbXBvcnRhbnQ7CiAgICAgIC1tcy1mbGV4LWFsaWduOiBjZW50ZXIgIWltcG9ydGFudDsKICAgICAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXIgIWltcG9ydGFudDsKICBib3JkZXI6IDAgIWltcG9ydGFudDsKICBib3gtc2hhZG93OiBub25lICFpbXBvcnRhbnQ7CiAgY3Vyc29yOiBwb2ludGVyICFpbXBvcnRhbnQ7CiAgZGlzcGxheTogaW5saW5lLWJsb2NrICFpbXBvcnRhbnQ7CiAgLXdlYmtpdC1ib3gtZmxleDogMCAhaW1wb3J0YW50OwogICAgICAtbXMtZmxleDogMCAwIGF1dG8gIWltcG9ydGFudDsKICAgICAgICAgIGZsZXg6IDAgMCBhdXRvICFpbXBvcnRhbnQ7CiAgZm9udC1zaXplOiAuODVlbSAhaW1wb3J0YW50OwogIGZvbnQtd2VpZ2h0OiBib2xkICFpbXBvcnRhbnQ7CiAgaGVpZ2h0OiBhdXRvICFpbXBvcnRhbnQ7CiAgbGV0dGVyLXNwYWNpbmc6IC4wOGVtOwogIGxpbmUtaGVpZ2h0OiAuOTUgIWltcG9ydGFudDsKICBtYXgtd2lkdGg6IDE2ZW0gIWltcG9ydGFudDsKICBvcGFjaXR5OiAuODU7CiAgb3ZlcmZsb3c6IHZpc2libGUgIWltcG9ydGFudDsKICBwb3NpdGlvbjogcmVsYXRpdmUgIWltcG9ydGFudDsKICB0ZXh0LWRlY29yYXRpb246IG5vbmUgIWltcG9ydGFudDsKICB0ZXh0LWluZGVudDogLjA4ZW07CiAgdGV4dC1vdmVyZmxvdzogZWxsaXBzaXMgIWltcG9ydGFudDsKICB0ZXh0LXRyYW5zZm9ybTogdXBwZXJjYXNlICFpbXBvcnRhbnQ7CiAgd2hpdGUtc3BhY2U6IG5vd3JhcCAhaW1wb3J0YW50OwogIHdpZHRoOiBhdXRvICFpbXBvcnRhbnQ7Cn0KCmNsb3VkZmxhcmUtYXBwW2FwcD0id2VsY29tZS1iYXIiXSAuYWxlcnQtY3RhLWJ1dHRvbjo6YWZ0ZXIgewogIGNvbG9yOiBpbmhlcml0ICFpbXBvcnRhbnQ7CiAgY29udGVudDogIlwyMDNBIjsKICBkaXNwbGF5OiBpbmxpbmUtYmxvY2sgIWltcG9ydGFudDsKICBmb250LWZhbWlseTogImNmYXBwcy13ZWxjb21lLWJhci1pY29ucyI7CiAgZm9udC1zaXplOiAxLjNlbSAhaW1wb3J0YW50OwogIGZvbnQtc3R5bGU6IG5vcm1hbDsKICBmb250LXdlaWdodDogaW5oZXJpdDsKICBsaW5lLWhlaWdodDogLjggIWltcG9ydGFudDsKICBtYXJnaW4tdG9wOiAtMXB4ICFpbXBvcnRhbnQ7CiAgbWFyZ2luLXRvcDogYXV0byAhaW1wb3J0YW50OwogIHBhZGRpbmctbGVmdDogLjNlbSAhaW1wb3J0YW50OwogIHBvc2l0aW9uOiBhYnNvbHV0ZTsKICBsZWZ0OiAxMDAlOwp9CgpjbG91ZGZsYXJlLWFwcFthcHA9IndlbGNvbWUtYmFyIl0gYWxlcnQtZGlzbWlzcyB7CiAgY3Vyc29yOiBwb2ludGVyOwogIGNvbG9yOiByZ2JhKDEwLCAxMCwgMTAsIC4yNSk7CiAgZGlzcGxheTogaW5saW5lLWJsb2NrOwogIC13ZWJraXQtYm94LWZsZXg6IDA7CiAgICAgIC1tcy1mbGV4OiAwIDAgYXV0bzsKICAgICAgICAgIGZsZXg6IDAgMCBhdXRvOwogIGZvbnQtZmFtaWx5OiAiSGVsdmV0aWNhIE5ldWUiLCBIZWx2ZXRpY2EsIEFyaWFsLCBzYW5zLXNlcmlmOwogIGZvbnQtc2l6ZTogMmVtOwogIGZvbnQtd2VpZ2h0OiAzMDA7CiAgaGVpZ2h0OiAxZW07CiAgbGluZS1oZWlnaHQ6IC43NWVtOwogIG1hcmdpbjogMCAuMmVtOwogIC13ZWJraXQtdXNlci1zZWxlY3Q6IG5vbmU7CiAgICAgLW1vei11c2VyLXNlbGVjdDogbm9uZTsKICAgICAgLW1zLXVzZXItc2VsZWN0OiBub25lOwogICAgICAgICAgdXNlci1zZWxlY3Q6IG5vbmU7CiAgd2lkdGg6IC45ZW07Cn0KCmNsb3VkZmxhcmUtYXBwW2FwcD0id2VsY29tZS1iYXIiXSBhbGVydC1kaXNtaXNzOmhvdmVyIHsKICBjb2xvcjogcmdiYSgxMCwgMTAsIDEwLCAuNSk7Cn0KCmh0bWwgPiBib2R5ID4gY2xvdWRmbGFyZS1hcHBbYXBwPSJ3ZWxjb21lLWJhciJdW2RhdGEtc3R5bGU9InNsaW0iXSB7CiAgZm9udC1zaXplOiAuOTJlbTsKICBtaW4taGVpZ2h0OiAyLjJlbTsKfQoKaHRtbCA+IGJvZHkgPiBjbG91ZGZsYXJlLWFwcFthcHA9IndlbGNvbWUtYmFyIl1bZGF0YS1zdHlsZT0icHJvbWluZW50Il0gLmFsZXJ0LWN0YS1idXR0b24gewogIGJvcmRlci1yYWRpdXM6IC4xNWVtOwp9CgpAbWVkaWEgKG1pbi13aWR0aDogNzY4cHgpIHsKICBjbG91ZGZsYXJlLWFwcFthcHA9IndlbGNvbWUtYmFyIl0gewogICAgcGFkZGluZzogLjVlbSAwOwogIH0KCiAgY2xvdWRmbGFyZS1hcHBbYXBwPSJ3ZWxjb21lLWJhciJdW2RhdGEtc3R5bGU9InByb21pbmVudCJdIC5hbGVydC1jdGEtYnV0dG9uIHsKICAgIHBhZGRpbmc6IC42NWVtIDEuNzVlbSAuNmVtIC45ZW0gIWltcG9ydGFudDsKICB9CgogIGNsb3VkZmxhcmUtYXBwW2FwcD0id2VsY29tZS1iYXIiXVtkYXRhLXN0eWxlPSJwcm9taW5lbnQiXSAuYWxlcnQtY3RhLWJ1dHRvbjo6YWZ0ZXIgewogICAgbGVmdDogYXV0bzsKICB9CgogIGNsb3VkZmxhcmUtYXBwW2FwcD0id2VsY29tZS1iYXIiXSAuYWxlcnQtY3RhLWJ1dHRvbiB7CiAgICBtYXJnaW4tbGVmdDogMWVtOwogIH0KfQoKQG1lZGlhIChtYXgtd2lkdGg6IDc2OHB4KSB7CiAgaHRtbCA+IGJvZHkgPiBjbG91ZGZsYXJlLWFwcFthcHA9IndlbGNvbWUtYmFyIl0gewogICAgLXdlYmtpdC1ib3gtYWxpZ246IGNlbnRlcjsKICAgICAgICAtbXMtZmxleC1hbGlnbjogY2VudGVyOwogICAgICAgICAgICBhbGlnbi1pdGVtczogY2VudGVyOwogICAgZm9udC1zaXplOiAuOTJlbTsKICAgIG1pbi1oZWlnaHQ6IDIuMmVtOwogICAgcGFkZGluZzogLjVlbSAwIC41ZW0gLjVlbTsKICB9CgogIGNsb3VkZmxhcmUtYXBwW2FwcD0id2VsY29tZS1iYXIiXSAuYWxlcnQtY3RhLWJ1dHRvbiB7CiAgICBtYXJnaW4tdG9wOiAuNWVtOwogICAgZGlzcGxheTogYmxvY2sgIWltcG9ydGFudDsKICAgIC13ZWJraXQtYm94LWZsZXg6IDA7CiAgICAgICAgLW1zLWZsZXg6IDAgMCBhdXRvOwogICAgICAgICAgICBmbGV4OiAwIDAgYXV0bzsKICB9CgogIGNsb3VkZmxhcmUtYXBwW2FwcD0id2VsY29tZS1iYXIiXSBhbGVydC1tZXNzYWdlLWNvbnRlbnQgewogICAgLXdlYmtpdC1ib3gtb3JpZW50OiB2ZXJ0aWNhbCAhaW1wb3J0YW50OwogICAgLXdlYmtpdC1ib3gtZGlyZWN0aW9uOiBub3JtYWwgIWltcG9ydGFudDsKICAgICAgICAtbXMtZmxleC1mbG93OiBjb2x1bW4gbm93cmFwICFpbXBvcnRhbnQ7CiAgICAgICAgICAgIGZsZXgtZmxvdzogY29sdW1uIG5vd3JhcCAhaW1wb3J0YW50OwogICAgLXdlYmtpdC1ib3gtYWxpZ246IHN0YXJ0ICFpbXBvcnRhbnQ7CiAgICAgICAgLW1zLWZsZXgtYWxpZ246IHN0YXJ0ICFpbXBvcnRhbnQ7CiAgICAgICAgICAgIGFsaWduLWl0ZW1zOiBmbGV4LXN0YXJ0ICFpbXBvcnRhbnQ7CiAgfQp9Cgo="></head>
+
+<body>
+    <center>
+        <div id="shake-it" style="animation: shake-it 0.35s cubic-bezier(0.68, -0.55, 0.27, 1.55) 0s infinite reverse none running;">
+            <h2>TG频道Ohcnzz 一瞬爆破！</h2>
+            <h1>Ohcnzz &amp; 资讯大灵堂</h1>
+            <h4>首次访问，音乐可能不会自动播放，请手动点击下部播放器开始播放以获得最佳观赏体验，，，</h4>
+        </div>
+        <div class="aplayer" data-name="Mother Fucker" data-artist="Toca" data-url="music.mp3" data-cover="music.jpg" data-autoplay="true">
+<div class="aplayer-body">
+    <div class="aplayer-pic" style="background-image: url(&quot;music.jpg&quot;);background-color: #2980b9;">
+        <div class="aplayer-button aplayer-play"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 16 31"><path d="M15.552 15.168q0.448 0.32 0.448 0.832 0 0.448-0.448 0.768l-13.696 8.512q-0.768 0.512-1.312 0.192t-0.544-1.28v-16.448q0-0.96 0.544-1.28t1.312 0.192z"></path></svg></div>
+    </div>
+    <div class="aplayer-info">
+        <div class="aplayer-music">
+            <span class="aplayer-title">Mother Fucker</span>
+            <span class="aplayer-author"> - Toca</span>
+        </div>
+        <div class="aplayer-lrc">
+            <div class="aplayer-lrc-contents" style="transform: translateY(0); -webkit-transform: translateY(0);"></div>
+        </div>
+        <div class="aplayer-controller">
+            <div class="aplayer-bar-wrap">
+                <div class="aplayer-bar">
+                    <div class="aplayer-loaded" style="width: 61.5462%;"></div>
+                    <div class="aplayer-played" style="width: 0; background: #2980b9;">
+                        <span class="aplayer-thumb" style="background: #2980b9;">
+                            <span class="aplayer-loading-icon"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 32 32"><path d="M4 16c0-6.6 5.4-12 12-12s12 5.4 12 12c0 1.2-0.8 2-2 2s-2-0.8-2-2c0-4.4-3.6-8-8-8s-8 3.6-8 8 3.6 8 8 8c1.2 0 2 0.8 2 2s-0.8 2-2 2c-6.6 0-12-5.4-12-12z"></path></svg></span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="aplayer-time">
+                <span class="aplayer-time-inner">
+                    <span class="aplayer-ptime">00:00</span> / <span class="aplayer-dtime">02:13</span>
+                </span>
+                <span class="aplayer-icon aplayer-icon-back">
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 32 32"><path d="M25.468 6.947c-0.326-0.172-0.724-0.151-1.030 0.057l-6.438 4.38v-3.553c0-0.371-0.205-0.71-0.532-0.884-0.326-0.172-0.724-0.151-1.030 0.057l-12 8.164c-0.274 0.186-0.438 0.496-0.438 0.827s0.164 0.641 0.438 0.827l12 8.168c0.169 0.115 0.365 0.174 0.562 0.174 0.16 0 0.321-0.038 0.468-0.116 0.327-0.173 0.532-0.514 0.532-0.884v-3.556l6.438 4.382c0.169 0.115 0.365 0.174 0.562 0.174 0.16 0 0.321-0.038 0.468-0.116 0.327-0.173 0.532-0.514 0.532-0.884v-16.333c0-0.371-0.205-0.71-0.532-0.884z"></path></svg>
+                </span>
+                <span class="aplayer-icon aplayer-icon-play"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 16 31"><path d="M15.552 15.168q0.448 0.32 0.448 0.832 0 0.448-0.448 0.768l-13.696 8.512q-0.768 0.512-1.312 0.192t-0.544-1.28v-16.448q0-0.96 0.544-1.28t1.312 0.192z"></path></svg></span>
+                <span class="aplayer-icon aplayer-icon-forward">
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 32 32"><path d="M25.468 6.947c-0.326-0.172-0.724-0.151-1.030 0.057l-6.438 4.38v-3.553c0-0.371-0.205-0.71-0.532-0.884-0.326-0.172-0.724-0.151-1.030 0.057l-12 8.164c-0.274 0.186-0.438 0.496-0.438 0.827s0.164 0.641 0.438 0.827l12 8.168c0.169 0.115 0.365 0.174 0.562 0.174 0.16 0 0.321-0.038 0.468-0.116 0.327-0.173 0.532-0.514 0.532-0.884v-3.556l6.438 4.382c0.169 0.115 0.365 0.174 0.562 0.174 0.16 0 0.321-0.038 0.468-0.116 0.327-0.173 0.532-0.514 0.532-0.884v-16.333c0-0.371-0.205-0.71-0.532-0.884z"></path></svg>
+                </span>
+                <div class="aplayer-volume-wrap">
+                    <button type="button" class="aplayer-icon aplayer-icon-volume-down"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 28 32"><path d="M13.728 6.272v19.456q0 0.448-0.352 0.8t-0.8 0.32-0.8-0.32l-5.952-5.952h-4.672q-0.48 0-0.8-0.352t-0.352-0.8v-6.848q0-0.48 0.352-0.8t0.8-0.352h4.672l5.952-5.952q0.32-0.32 0.8-0.32t0.8 0.32 0.352 0.8zM20.576 16q0 1.344-0.768 2.528t-2.016 1.664q-0.16 0.096-0.448 0.096-0.448 0-0.8-0.32t-0.32-0.832q0-0.384 0.192-0.64t0.544-0.448 0.608-0.384 0.512-0.64 0.192-1.024-0.192-1.024-0.512-0.64-0.608-0.384-0.544-0.448-0.192-0.64q0-0.48 0.32-0.832t0.8-0.32q0.288 0 0.448 0.096 1.248 0.48 2.016 1.664t0.768 2.528z"></path></svg></button>
+                    <div class="aplayer-volume-bar-wrap">
+                        <div class="aplayer-volume-bar">
+                            <div class="aplayer-volume" style="height: 70%; background: rgb(41, 128, 185);"></div>
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="aplayer-icon aplayer-icon-order">
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 32 32"><path d="M0.622 18.334h19.54v7.55l11.052-9.412-11.052-9.413v7.549h-19.54v3.725z"></path></svg>
+                </button>
+                <button type="button" class="aplayer-icon aplayer-icon-loop">
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 29 32"><path d="M9.333 9.333h13.333v4l5.333-5.333-5.333-5.333v4h-16v8h2.667v-5.333zM22.667 22.667h-13.333v-4l-5.333 5.333 5.333 5.333v-4h16v-8h-2.667v5.333z"></path></svg>
+                </button>
+                <button type="button" class="aplayer-icon aplayer-icon-menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 22 32"><path d="M20.8 14.4q0.704 0 1.152 0.48t0.448 1.12-0.48 1.12-1.12 0.48h-19.2q-0.64 0-1.12-0.48t-0.48-1.12 0.448-1.12 1.152-0.48h19.2zM1.6 11.2q-0.64 0-1.12-0.48t-0.48-1.12 0.448-1.12 1.152-0.48h19.2q0.704 0 1.152 0.48t0.448 1.12-0.48 1.12-1.12 0.48h-19.2zM20.8 20.8q0.704 0 1.152 0.48t0.448 1.12-0.48 1.12-1.12 0.48h-19.2q-0.64 0-1.12-0.48t-0.48-1.12 0.448-1.12 1.152-0.48h19.2z"></path></svg>
+                </button>
+                <button type="button" class="aplayer-icon aplayer-icon-lrc">
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 32 32"><path d="M26.667 5.333h-21.333c-0 0-0.001 0-0.001 0-1.472 0-2.666 1.194-2.666 2.666 0 0 0 0.001 0 0.001v-0 16c0 0 0 0.001 0 0.001 0 1.472 1.194 2.666 2.666 2.666 0 0 0.001 0 0.001 0h21.333c0 0 0.001 0 0.001 0 1.472 0 2.666-1.194 2.666-2.666 0-0 0-0.001 0-0.001v0-16c0-0 0-0.001 0-0.001 0-1.472-1.194-2.666-2.666-2.666-0 0-0.001 0-0.001 0h0zM5.333 16h5.333v2.667h-5.333v-2.667zM18.667 24h-13.333v-2.667h13.333v2.667zM26.667 24h-5.333v-2.667h5.333v2.667zM26.667 18.667h-13.333v-2.667h13.333v2.667z"></path></svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="aplayer-notice"></div>
+    <div class="aplayer-miniswitcher"><button class="aplayer-icon"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 32 32"><path d="M22 16l-10.105-10.6-1.895 1.987 8.211 8.613-8.211 8.612 1.895 1.988 8.211-8.613z"></path></svg></button></div>
+</div>
+<div class="aplayer-list" style="max-height: 250px">
+    <ol style="max-height: 250px">
+        
+<li class="aplayer-list-light">
+    <span class="aplayer-list-cur" style="background-color: #2980b9;"></span>
+    <span class="aplayer-list-index">1</span>
+    <span class="aplayer-list-title">Mother Fucker</span>
+    <span class="aplayer-list-author">Toca</span>
+</li>
+
+    </ol>
+</div>
+</div>
+        <div id="information_box" class="box">
+            <h3 style="margin-top:0">说明</h3>
+            <div style="font-size: 18px">
+                各位羊分享的用户们，来自Hostloc的好友们，Oh CN ZZ的订阅者们:
+                <br>
+                经过挽救，李平炸妈灵堂的源码已经彻底恢复；<b>李平传人李宗阳</b> 已继承李平衣钵（灵堂）!
+                <br>
+            </div>
+            <br>
+            <img src="./files/dao.jpg" style="max-width: 85%; margin: 0 auto">
+            <br>
+            <hr>
+            <div id="shake-sb" style="animation: shake-sb 0.5s cubic-bezier(0.82, -0.44, 0.82, 1.14) 0s infinite reverse none running;">前有外贸人李平给朋友搭建外贸云用 <code>iptables</code>防 DDos<br>后有弱密码人李宗阳开公益机场发誓打爆所有付费机场</div>
+            <br>
+            <hr>
+            <img src="./files/xj.jpg" style="max-width: 120.0%; margin: 0 -10%">
+            <ul>
+                <li><a href="https://t.me/ohcnzz/8528" target="_blank">爆破所有付费机场</a></li>
+                <li><a href="https://t.me/ohcnzz/8726" target="_blank">持 续 车 硬</a></li>
+                <li><a href="https://t.me/ohcnzz/8755" target="_blank">车 硬 人 一 瞬 爆 破 坠 毁</a></li>
+            </ul>
+        </div>
+    </center>
+    <div class="metatext box">
+        <p>正义神必人士版权<b>没</b>有，侵权<b>不</b>究</p>
+        <p>订阅<a href="https://t.me/ohcnzz" target="_blank">Oh CN ZZ</a> 频道，每天笑断10W鸡掰</p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1"></script>
+    <script>
+        window.onload = function () {
+            $(function () {
+                var wh = $(window).height();
+                var f = $(document).width();
+                setInterval(function () {
+                    var e = Math.random() * f - 40;
+                    var o = 8 * Math.random();
+                    var fon = 10 + Math.random() * 150;
+                    var l = e - 114 + 514 * Math.random();
+                    var k = 4514 + 8101 * Math.random();
+                    var html = "<div id='sb1'><div>";
+                    $(html).clone().appendTo("body").css({
+                        left: e + "px",
+                        opacity: o,
+                        "font-size": fon,
+                    }).animate({
+                        top: (wh * 2) + "px",
+                        left: l + "1px",
+                        opacity: 1,
+                    }, k, "linear", function () {
+                        $(this).remove()
+                    })
+                }, 514)
+            });
+            $(function () {
+                var wh = $(window).height();
+                var f = $(document).width();
+                setInterval(function () {
+                    var e = Math.random() * f - 150;
+                    var o = 1.6 * Math.random();
+                    var fon = 20 + Math.random() * 30;
+                    var l = e - 40 + 326 * Math.random();
+                    var k = 3114 + 5140 * Math.random();
+                    var html = "<div id='sb2'><div>";
+                    $(html).clone().appendTo("body").css({
+                        left: e + "px",
+                        opacity: o,
+                        "font-size": fon,
+                    }).animate({
+                        top: (wh * 2) + "px",
+                        left: l + ".5px",
+                        opacity: 1,
+                    }, k, "linear", function () {
+                        $(this).remove()
+                    })
+                }, 819)
+            });
+            $(function () {
+                var wh = $(window).height();
+                var f = $(document).width();
+                setInterval(function () {
+                    var e = Math.random() * f - 130;
+                    var o = 1.4 * Math.random();
+                    var fon = 12 + Math.random() * 30;
+                    var l = e - 92 + 356 * Math.random();
+                    var k = 2198 + 5810 * Math.random();
+                    var html = "<div id='sb3'><div>";
+                    $(html).clone().appendTo("body").css({
+                        left: e + "px",
+                        opacity: o,
+                        "font-size": fon,
+                    }).animate({
+                        top: (wh * 2) + "px",
+                        left: l + ".8px",
+                        opacity: 1,
+                    }, k, "linear", function () {
+                        $(this).remove()
+                    })
+                }, 451)
+            });
+            document.getElementById("shake-it").style = "animation: shake-it .35s reverse infinite cubic-bezier(0.68, -0.55, 0.27, 1.55);";
+            document.getElementById("shake-sb").style = "animation: shake-sb .5s reverse infinite cubic-bezier(0.82, -0.44, 0.82, 1.14);";
+        }
+
+        console.info(" _ _ _  _  ____  _ _  _   _  ___  _  ___   ___  _  ___  ");
+        console.info("/ / | || || ___|/ | || | / |/ _ \/ |/ _ \ ( _ )/ |/ _ \ ");
+        console.info("| | | || ||___ \| | || |_| | (_) | | (_) |/ _ \| | | | |");
+        console.info("| | |__   _|__) | |__   _| |\__, | |\__, | (_) | | |_| |");
+        console.info("|_|_|  |_||____/|_|  |_| |_|  /_/|_|  /_/ \___/|_|\___/ ");
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/aplayer@1.10"></script>
+    <script src="https://cdn.jsdelivr.net/npm/meting@1.2"></script>
+
+
+<cloudflare-app app="welcome-bar" data-style="prominent" style="z-index: 100;"><alert-message><alert-message-content>李宗阳先生自传《我是怎么被爆破从而一瞬坠毁的》<a class="alert-cta-button" target="_blank" href="http://www.lofter.com/lpost/200a0260_12d210b92">立即阅读</a></alert-message-content></alert-message></cloudflare-app><div id="sb1" style="left: 2179.02px; opacity: 1; font-size: 133.482px; top: 1717.14px;"><div></div></div><div id="sb1" style="left: 1603.99px; opacity: 1; font-size: 150.508px; top: 1749.44px;"><div></div></div><div id="sb1" style="left: 1389.46px; opacity: 1; font-size: 82.1783px; top: 1478.03px;"><div></div></div><div id="sb1" style="left: 662.899px; opacity: 1; font-size: 143.621px; top: 1417.13px;"><div></div></div><div id="sb2" style="left: 1496.53px; opacity: 0.972366; font-size: 43.8456px; top: 1814.85px;"><div></div></div><div id="sb1" style="left: 101.396px; opacity: 1; font-size: 11.4176px; top: 1399.91px;"><div></div></div><div id="sb1" style="left: 1548.38px; opacity: 1; font-size: 58.2761px; top: 1201.33px;"><div></div></div><div id="sb1" style="left: 1475.43px; opacity: 1; font-size: 65.8271px; top: 1082.08px;"><div></div></div><div id="sb1" style="left: 1661.68px; opacity: 1; font-size: 73.9116px; top: 996.847px;"><div></div></div><div id="sb2" style="left: 1178.66px; opacity: 0.872239; font-size: 23.5801px; top: 1452.6px;"><div></div></div><div id="sb3" style="left: 1097.03px; opacity: 1; font-size: 15.7574px; top: 1455.85px;"><div></div></div><div id="sb1" style="left: 668.354px; opacity: 0.983735; font-size: 10.539px; top: 1614.91px;"><div></div></div><div id="sb1" style="left: 1044.1px; opacity: 1; font-size: 14.705px; top: 1676.13px;"><div></div></div><div id="sb3" style="left: 1608.11px; opacity: 1; font-size: 35.1747px; top: 1669.75px;"><div></div></div><div id="sb1" style="left: -3.5965px; opacity: 1; font-size: 147.827px; top: 753.669px;"><div></div></div><div id="sb1" style="left: 1559.27px; opacity: 1; font-size: 26.9626px; top: 557.826px;"><div></div></div><div id="sb2" style="left: 572.477px; opacity: 1; font-size: 39.7054px; top: 801.061px;"><div></div></div><div id="sb1" style="left: 1557.15px; opacity: 1; font-size: 11.7841px; top: 1169.1px;"><div></div></div><div id="sb3" style="left: 9.21495px; opacity: 0.920891; font-size: 37.838px; top: 1086.36px;"><div></div></div><div id="sb1" style="left: 1628.25px; opacity: 1; font-size: 39.4304px; top: 727.434px;"><div></div></div><div id="sb3" style="left: 353.635px; opacity: 1; font-size: 39.2272px; top: 798.901px;"><div></div></div><div id="sb2" style="left: -24.041px; opacity: 0.799598; font-size: 44.0023px; top: 512.552px;"><div></div></div><div id="sb1" style="left: 515.32px; opacity: 1; font-size: 70.5562px; top: 357.015px;"><div></div></div><div id="sb3" style="left: 1448.98px; opacity: 0.91965; font-size: 37.6119px; top: 1386.77px;"><div></div></div><div id="sb3" style="left: 463.041px; opacity: 0.983148; font-size: 30.2531px; top: 502.502px;"><div></div></div><div id="sb1" style="left: 337.545px; opacity: 0.362867; font-size: 15.9278px; top: 470.069px;"><div></div></div><div id="sb2" style="left: 1178.91px; opacity: 1; font-size: 33.6155px; top: 612.3px;"><div></div></div><div id="sb3" style="left: 945.233px; opacity: 0.331938; font-size: 32.1792px; top: 387.009px;"><div></div></div><div id="sb1" style="left: 415.9px; opacity: 1; font-size: 13.6965px; top: 147.161px;"><div></div></div><div id="sb2" style="left: 204.018px; opacity: 1; font-size: 30.6232px; top: 177.129px;"><div></div></div><div id="sb3" style="left: 140.331px; opacity: 0.153648; font-size: 25.4951px; top: 172.163px;"><div></div></div><div id="sb1" style="left: 362.984px; opacity: 1; font-size: 65.7463px; top: 75.6413px;"><div></div></div><div id="sb3" style="left: 648.415px; opacity: 0.504301; font-size: 35.1204px; top: 2.32055px;"><div></div></div></body></html>
